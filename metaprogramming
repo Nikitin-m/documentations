@@ -1,0 +1,17 @@
+1) Compilators, Interpetators, Translators
+2) Analyzers()
+3) Scaffolding - генерация классов
+4) Code generation
+ 4.1) Compile time - перед созданием длл
+ 4.2) Runtime - на машине пользователя
+ 
+dot.net
+1) reflection - использование уже скомпиленного
+ 1.2) reflection emit - генерация нового кода(il code - проще взять готовый il и его менять)
+2) expressions - представление лямды в виде объекта, или генерить с помощью c# код на sql(или другой)
+3) roslyn compiler platform
+ 3.1) code analyzers -абстрактное синтаксическое дерево(что внутри метода и тд, например System.Tasks.Task и Task будет разные а для модели одно и то же)
+ и семантическая модель(на основе дерева - где оперируем не синтаксисом а параметрами языка)
+ 3.2) code fixes and refactorings
+ 3.3) code generators
+4) codedom.compiler
